@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App with Navbar</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#" class="active">List</a></li>
+      <li><a href="#" id="doubtTabLink">Doubt Solving</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div id="listTab" class="tab">
+      <h1>To-Do List</h1>
+      <input type="text" id="taskInput" placeholder="Add a task...">
+      <button id="addTaskBtn">Add Task</button>
+      <ul id="taskList"></ul>
+    </div>
+
+    <div id="doubtTab" class="tab hidden">
+      <h1>Doubt Solving</h1>
+      <textarea id="doubtInput" placeholder="Type your doubt..."></textarea>
+      <button id="submitDoubtBtn">Submit</button>
+      <div id="doubtResponse"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
